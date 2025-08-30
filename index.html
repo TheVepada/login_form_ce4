@@ -4,15 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login-form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Login Form</h1>
-    <form action="/login" method="post">
-        <label for="username">Username:</label>
+    <form action="cong.html" method="get">
+       <div class="user">
+         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required><br><br>
-        <label for="password">Password:</label>
+       </div>
+       <div class="pass">
+         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required><br><br>
-        <button type="submit">Login</button>
+       </div>
+       <div class="checkbox">
+            <input type="checkbox" id="remember" name="remember">
+         <label for="remember">Remember Me</label>
+       </div>
+     
+        <button type="submit" name="submit" id="submit">Login</button>
+        <br><br>
+        <div class="reg_for">
+           <button type="button" id="register" onclick="window.location.href='register.html'">Register Now  !</button>
+            <button type="button" name="for" id="for" onclick="window.location.href='forgot.html'">Forgot Password ?</button>
+            
+        </div>
     </form>
     
 </body>
